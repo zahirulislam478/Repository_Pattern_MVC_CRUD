@@ -1,0 +1,183 @@
+﻿-- Insert players for Australia (TeamId = 1)
+INSERT INTO Players (PlayerName, Age, PlayingRole, Matches, Runs, Hundred, Fifty, Wicket, Salary, TeamId)
+VALUES
+    ('David Warner', 34, 'Batsman', 120, 5500, 10, 30, 0, 15000.00, 1),
+    ('Mitchell Starc', 31, 'Bowler', 90, 500, 0, 5, 180, 13000.00, 1),
+    ('Steve Smith', 32, 'Batsman', 110, 4800, 8, 25, 0, 16000.00, 1),
+    ('Pat Cummins', 29, 'Bowler', 100, 600, 0, 4, 220, 14000.00, 1),
+    ('Glenn Maxwell', 33, 'All-Rounder', 150, 3000, 5, 15, 60, 12000.00, 1),
+    ('Alex Carey', 30, 'Wicketkeeper-Batsman', 70, 1500, 1, 10, 0, 10000.00, 1),
+    ('Nathan Lyon', 34, 'Bowler', 85, 800, 0, 1, 230, 11000.00, 1),
+    ('Aaron Finch', 35, 'Batsman', 130, 4000, 7, 20, 0, 14000.00, 1),
+    ('Josh Hazlewood', 30, 'Bowler', 80, 300, 0, 0, 160, 12000.00, 1),
+    ('Marcus Stoinis', 32, 'All-Rounder', 90, 2000, 2, 10, 40, 10000.00, 1),
+    ('Matthew Wade', 33, 'Wicketkeeper-Batsman', 60, 1300, 0, 5, 0, 9000.00, 1);
+
+-- Insert players for England (TeamId = 2)
+INSERT INTO Players (PlayerName, Age, PlayingRole, Matches, Runs, Hundred, Fifty, Wicket, Salary, TeamId)
+VALUES
+    ('Joe Root', 30, 'Batsman', 140, 7500, 18, 40, 5, 17000.00, 2),
+    ('Jofra Archer', 26, 'Bowler', 70, 800, 0, 6, 120, 14000.00, 2),
+    ('Ben Stokes', 30, 'All-Rounder', 120, 4000, 6, 30, 50, 16000.00, 2),
+    ('Eoin Morgan', 35, 'Batsman', 110, 3200, 5, 20, 0, 15000.00, 2),
+    ('Adil Rashid', 33, 'Bowler', 100, 400, 0, 1, 180, 12000.00, 2),
+    ('Jos Buttler', 31, 'Wicketkeeper-Batsman', 90, 2500, 4, 15, 0, 14000.00, 2),
+    ('Jonny Bairstow', 32, 'Batsman', 100, 2800, 3, 20, 0, 13000.00, 2),
+    ('Mark Wood', 31, 'Bowler', 80, 300, 0, 0, 150, 11000.00, 2),
+    ('Jason Roy', 31, 'Batsman', 90, 2700, 4, 15, 0, 13000.00, 2),
+    ('Chris Woakes', 32, 'All-Rounder', 100, 1500, 1, 10, 40, 12000.00, 2),
+    ('Sam Curran', 24, 'All-Rounder', 50, 800, 0, 5, 25, 10000.00, 2);
+
+    -- Insert players for India (TeamId = 3)
+INSERT INTO Players (PlayerName, Age, PlayingRole, Matches, Runs, Hundred, Fifty, Wicket, Salary, TeamId)
+VALUES
+    ('Virat Kohli', 32, 'Batsman', 200, 12000, 25, 50, 0, 20000.00, 3),
+    ('Rohit Sharma', 34, 'Batsman', 190, 11000, 20, 45, 0, 18000.00, 3),
+    ('Jasprit Bumrah', 27, 'Bowler', 120, 1500, 0, 2, 250, 15000.00, 3),
+    ('Hardik Pandya', 28, 'All-Rounder', 130, 3000, 6, 20, 70, 14000.00, 3),
+    ('Ravindra Jadeja', 33, 'All-Rounder', 160, 4000, 4, 30, 150, 13000.00, 3),
+    ('KL Rahul', 29, 'Batsman', 100, 4500, 8, 25, 0, 16000.00, 3),
+    ('Yuzvendra Chahal', 31, 'Bowler', 110, 200, 0, 1, 180, 12000.00, 3),
+    ('Shikhar Dhawan', 35, 'Batsman', 180, 8000, 15, 35, 0, 15000.00, 3),
+    ('Bhuvneshwar Kumar', 31, 'Bowler', 130, 1000, 0, 1, 180, 13000.00, 3),
+    ('Kuldeep Yadav', 27, 'Bowler', 90, 150, 0, 0, 120, 11000.00, 3),
+    ('Rishabh Pant', 24, 'Wicketkeeper-Batsman', 50, 1300, 1, 8, 0, 12000.00, 3);
+
+-- Insert players for Pakistan (TeamId = 4)
+INSERT INTO Players (PlayerName, Age, PlayingRole, Matches, Runs, Hundred, Fifty, Wicket, Salary, TeamId)
+VALUES
+    ('Babar Azam', 27, 'Batsman', 130, 6000, 10, 35, 0, 18000.00, 4),
+    ('Shaheen Afridi', 22, 'Bowler', 70, 600, 0, 3, 130, 14000.00, 4),
+    ('Imad Wasim', 32, 'All-Rounder', 90, 1500, 1, 10, 40, 12000.00, 4),
+    ('Mohammad Rizwan', 29, 'Wicketkeeper-Batsman', 60, 1800, 2, 12, 0, 13000.00, 4),
+    ('Shadab Khan', 23, 'All-Rounder', 100, 1800, 2, 10, 70, 14000.00, 4),
+    ('Fakhar Zaman', 31, 'Batsman', 70, 2500, 4, 15, 0, 14000.00, 4),
+    ('Haris Rauf', 28, 'Bowler', 50, 80, 0, 0, 85, 12000.00, 4),
+    ('Mohammad Hafeez', 41, 'All-Rounder', 200, 5500, 6, 35, 110, 16000.00, 4),
+    ('Sarfaraz Ahmed', 34, 'Wicketkeeper-Batsman', 110, 2500, 1, 15, 0, 13000.00, 4),
+    ('Shan Masood', 31, 'Batsman', 60, 1800, 2, 10, 0, 12000.00, 4),
+    ('Hasan Ali', 27, 'Bowler', 90, 600, 0, 2, 120, 13000.00, 4);
+
+    -- Insert players for New Zealand (TeamId = 5)
+INSERT INTO Players (PlayerName, Age, PlayingRole, Matches, Runs, Hundred, Fifty, Wicket, Salary, TeamId)
+VALUES
+    ('Kane Williamson', 31, 'Batsman', 150, 7500, 15, 45, 0, 17000.00, 5),
+    ('Trent Boult', 32, 'Bowler', 100, 800, 0, 4, 170, 15000.00, 5),
+    ('Ross Taylor', 37, 'Batsman', 180, 8000, 12, 50, 0, 16000.00, 5),
+    ('Lockie Ferguson', 30, 'Bowler', 50, 600, 0, 2, 80, 13000.00, 5),
+    ('Martin Guptill', 34, 'Batsman', 130, 6000, 8, 30, 0, 14000.00, 5),
+    ('Mitchell Santner', 30, 'All-Rounder', 90, 1500, 1, 10, 40, 12000.00, 5),
+    ('Tim Southee', 33, 'Bowler', 140, 1000, 0, 2, 180, 14000.00, 5),
+    ('Colin de Grandhomme', 34, 'All-Rounder', 100, 2000, 2, 10, 70, 13000.00, 5),
+    ('Tom Latham', 29, 'Wicketkeeper-Batsman', 120, 3000, 4, 20, 0, 15000.00, 5),
+    ('Ish Sodhi', 29, 'Bowler', 80, 100, 0, 0, 110, 12000.00, 5),
+    ('Kyle Jamieson', 26, 'All-Rounder', 40, 800, 1, 5, 30, 11000.00, 5);
+
+    -- Insert players for South Africa (TeamId = 6)
+INSERT INTO Players (PlayerName, Age, PlayingRole, Matches, Runs, Hundred, Fifty, Wicket, Salary, TeamId)
+VALUES
+    ('Quinton de Kock', 29, 'Wicketkeeper-Batsman', 150, 5500, 10, 35, 0, 16000.00, 6),
+    ('Kagiso Rabada', 26, 'Bowler', 90, 300, 0, 0, 150, 14000.00, 6),
+    ('Faf du Plessis', 37, 'Batsman', 180, 7000, 12, 40, 0, 15000.00, 6),
+    ('Anrich Nortje', 27, 'Bowler', 60, 400, 0, 1, 80, 13000.00, 6),
+    ('David Miller', 32, 'Batsman', 110, 3500, 6, 25, 0, 12000.00, 6),
+    ('Lungi Ngidi', 25, 'Bowler', 50, 200, 0, 0, 60, 11000.00, 6),
+    ('Temba Bavuma', 31, 'Batsman', 80, 2500, 3, 15, 0, 13000.00, 6),
+    ('Tabraiz Shamsi', 31, 'Bowler', 70, 150, 0, 0, 100, 12000.00, 6),
+    ('Heinrich Klaasen', 30, 'Wicketkeeper-Batsman', 70, 1800, 2, 10, 0, 14000.00, 6),
+    ('Andile Phehlukwayo', 25, 'All-Rounder', 80, 1500, 1, 10, 40, 13000.00, 6),
+    ('Aiden Markram', 27, 'Batsman', 60, 2000, 3, 15, 0, 14000.00, 6);
+
+-- Insert players for Bangladesh (TeamId = 7)
+INSERT INTO Players (PlayerName, Age, PlayingRole, Matches, Runs, Hundred, Fifty, Wicket, Salary, TeamId)
+VALUES
+    ('Shakib Al Hasan', 34, 'All-Rounder', 150, 6000, 8, 40, 150, 17000.00, 7),
+    ('Mushfiqur Rahim', 34, 'Wicketkeeper-Batsman', 130, 5000, 5, 30, 0, 15000.00, 7),
+    ('Mustafizur Rahman', 25, 'Bowler', 70, 300, 0, 0, 120, 13000.00, 7),
+    ('Tamim Iqbal', 32, 'Batsman', 180, 7500, 12, 45, 0, 16000.00, 7),
+    ('Mahmudullah', 35, 'All-Rounder', 120, 3000, 4, 20, 60, 14000.00, 7),
+    ('Liton Das', 27, 'Wicketkeeper-Batsman', 80, 2000, 1, 10, 0, 12000.00, 7),
+    ('Taskin Ahmed', 27, 'Bowler', 50, 100, 0, 0, 80, 11000.00, 7),
+    ('Soumya Sarkar', 28, 'All-Rounder', 90, 1800, 2, 10, 40, 12000.00, 7),
+    ('Mehidy Hasan', 24, 'All-Rounder', 70, 800, 0, 2, 80, 13000.00, 7),
+    ('Mohammad Saifuddin', 24, 'All-Rounder', 60, 500, 0, 2, 60, 12000.00, 7),
+    ('Najmul Hossain Shanto', 23, 'Batsman', 30, 800, 1, 4, 0, 11000.00, 7);
+
+    -- Insert players for Afghanistan (TeamId = 8)
+INSERT INTO Players (PlayerName, Age, PlayingRole, Matches, Runs, Hundred, Fifty, Wicket, Salary, TeamId)
+VALUES
+    ('Rashid Khan', 23, 'Bowler', 100, 400, 0, 0, 150, 16000.00, 8),
+    ('Mohammad Nabi', 36, 'All-Rounder', 120, 2500, 3, 15, 80, 15000.00, 8),
+    ('Hazratullah Zazai', 23, 'Batsman', 50, 1200, 2, 5, 0, 14000.00, 8),
+    ('Asghar Afghan', 34, 'Batsman', 130, 4500, 6, 30, 0, 15000.00, 8),
+    ('Najibullah Zadran', 28, 'Batsman', 70, 1500, 1, 8, 0, 12000.00, 8),
+    ('Karim Janat', 23, 'All-Rounder', 40, 500, 0, 1, 20, 11000.00, 8),
+    ('Naveen-ul-Haq', 22, 'Bowler', 30, 100, 0, 0, 30, 10000.00, 8),
+    ('Azmatullah Omarzai', 21, 'Batsman', 20, 400, 0, 2, 0, 9000.00, 8),
+    ('Rahmanullah Gurbaz', 21, 'Wicketkeeper-Batsman', 20, 800, 1, 4, 0, 11000.00, 8),
+    ('Mujeeb Ur Rahman', 21, 'Bowler', 50, 200, 0, 1, 70, 13000.00, 8),
+    ('Usman Ghani', 24, 'Batsman', 40, 1200, 2, 4, 0, 10000.00, 8);
+
+    -- Insert players for West Indies (TeamId = 9)
+INSERT INTO Players (PlayerName, Age, PlayingRole, Matches, Runs, Hundred, Fifty, Wicket, Salary, TeamId)
+VALUES
+    ('Kieron Pollard', 34, 'All-Rounder', 130, 3000, 4, 20, 60, 15000.00, 9),
+    ('Jason Holder', 29, 'All-Rounder', 120, 2500, 3, 15, 70, 14000.00, 9),
+    ('Nicholas Pooran', 25, 'Wicketkeeper-Batsman', 60, 1500, 2, 10, 0, 13000.00, 9),
+    ('Chris Gayle', 42, 'Batsman', 180, 8500, 15, 50, 0, 18000.00, 9),
+    ('Shimron Hetmyer', 24, 'Batsman', 70, 2000, 3, 10, 0, 12000.00, 9),
+    ('Sheldon Cottrell', 32, 'Bowler', 50, 200, 0, 0, 80, 11000.00, 9),
+    ('Evin Lewis', 30, 'Batsman', 60, 1800, 2, 10, 0, 12000.00, 9),
+    ('Hayden Walsh Jr.', 29, 'Bowler', 40, 100, 0, 0, 50, 10000.00, 9),
+    ('Alzarri Joseph', 25, 'Bowler', 30, 100, 0, 0, 40, 9000.00, 9),
+    ('Darren Bravo', 32, 'Batsman', 80, 2500, 2, 15, 0, 13000.00, 9),
+    ('Fabian Allen', 26, 'All-Rounder', 50, 800, 0, 4, 30, 11000.00, 9);
+
+    -- Insert players for Sri Lanka (TeamId = 10)
+INSERT INTO Players (PlayerName, Age, PlayingRole, Matches, Runs, Hundred, Fifty, Wicket, Salary, TeamId)
+VALUES
+    ('Kusal Perera', 30, 'Wicketkeeper-Batsman', 110, 4500, 8, 30, 0, 15000.00, 10),
+    ('Dushmantha Chameera', 29, 'Bowler', 50, 300, 0, 1, 70, 14000.00, 10),
+    ('Angelo Mathews', 34, 'All-Rounder', 150, 5000, 5, 35, 70, 16000.00, 10),
+    ('Avishka Fernando', 23, 'Batsman', 40, 1200, 2, 5, 0, 12000.00, 10),
+    ('Dasun Shanaka', 30, 'All-Rounder', 60, 1500, 1, 8, 20, 13000.00, 10),
+    ('Wanindu Hasaranga', 24, 'All-Rounder', 50, 800, 0, 5, 25, 12000.00, 10),
+    ('Niroshan Dickwella', 28, 'Wicketkeeper-Batsman', 70, 1800, 2, 23, 0, 11000.00, 10),
+    ('Dhananjaya de Silva', 29, 'All-Rounder', 80, 2000, 2, 15, 40, 12000.00, 10),
+    ('Bhanuka Rajapaksa', 26, 'Batsman', 20, 400, 0, 2, 0, 10000.00, 10),
+    ('Chamika Karunaratne', 25, 'All-Rounder', 30, 300, 0, 0, 20, 9000.00, 10),
+    ('Pathum Nissanka', 22, 'Batsman', 10, 300, 0, 2, 0, 8000.00, 10);
+
+-- Insert players for Ireland (TeamId = 11)
+INSERT INTO Players (PlayerName, Age, PlayingRole, Matches, Runs, Hundred, Fifty, Wicket, Salary, TeamId)
+VALUES
+    ('Paul Stirling', 31, 'Batsman', 120, 4000, 5, 20, 10, 12000.00, 11),
+    ('Boyd Rankin', 36, 'Bowler', 90, 150, 0, 1, 120, 10000.00, 11),
+    ('Andy Balbirnie', 31, 'Batsman', 100, 3200, 3, 15, 0, 11000.00, 11),
+    ('Mark Adair', 28, 'Bowler', 80, 500, 0, 2, 100, 9000.00, 11),
+    ('Kevin O Brien', 38, 'All-Rounder', 150, 2500, 2, 10, 50, 11000.00, 11),
+    ('Gary Wilson', 35, 'Wicketkeeper-Batsman', 70, 1200, 0, 5, 0, 8000.00, 11),
+    ('Simi Singh', 33, 'Bowler', 85, 800, 0, 1, 150, 9500.00, 11),
+    ('William Porterfield', 37, 'Batsman', 130, 3000, 1, 10, 0, 10000.00, 11),
+    ('Craig Young', 32, 'Bowler', 90, 200, 0, 0, 70, 8000.00, 11),
+    ('Harry Tector', 26, 'All-Rounder', 60, 1100, 0, 6, 30, 8500.00, 11),
+    ('Paul Coughlin', 29, 'All-Rounder', 50, 800, 0, 4, 25, 7500.00, 11);
+
+
+-- Insert players for Zimbabwe (TeamId = 12)
+INSERT INTO Players (PlayerName, Age, PlayingRole, Matches, Runs, Hundred, Fifty, Wicket, Salary, TeamId)
+VALUES
+    ('Brendan Taylor', 35, 'Batsman', 150, 4500, 5, 25, 0, 10000.00, 12),
+    ('Sean Williams', 34, 'All-Rounder', 120, 2800, 3, 15, 40, 9500.00, 12),
+    ('Sikandar Raza', 32, 'All-Rounder', 110, 2600, 2, 12, 30, 9000.00, 12),
+    ('Tendai Chatara', 30, 'Bowler', 90, 120, 0, 0, 110, 8500.00, 12),
+    ('Regis Chakabva', 33, 'Wicketkeeper-Batsman', 80, 1400, 1, 5, 0, 8000.00, 12),
+    ('Donald Tiripano', 31, 'Bowler', 70, 400, 0, 1, 80, 7500.00, 12),
+    ('Craig Ervine', 32, 'Batsman', 100, 2300, 2, 10, 0, 8500.00, 12),
+    ('Richard Ngarava', 24, 'Bowler', 50, 150, 0, 0, 50, 7000.00, 12),
+    ('Wesley Madhevere', 21, 'All-Rounder', 40, 800, 0, 4, 20, 6500.00, 12),
+    ('Ryan Burl', 27, 'All-Rounder', 60, 1000, 0, 6, 25, 7000.00, 12),
+    ('Brandon Mavuta', 24, 'Bowler', 30, 150, 0, 0, 40, 6000.00, 12);
+
+
+

@@ -1,0 +1,219 @@
+﻿@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .card-img-top {
+        transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .card {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .card:hover .card-img-top {
+        transform: scale(1.05);
+    }
+
+    .card:hover::before {
+        opacity: 1;
+    }
+
+    .welcome {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    h3 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+</style>
+<div class="welcome">
+    <h2 class="d-flex justify-content-center">
+        Unveiling CricketVerse: Where Every Ball Tells a Story
+
+    </h2><hr />
+</div>
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://resources.pulse.icc-cricket.com/photo-resources/2023/07/13/56ab440e-7978-49f8-b18d-a51ba8838fc7/cwc23-captains-v7.png?width=1920&height=1080" class="d-block w-100" style="max-height: 500px; object-fit: cover;" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<h3 class="d-flex justify-content-center"><strong>___________   Teams   ___________</strong></h3>
+
+<div class="row">
+    <div class="col-md-3 mb-2">
+        <div class="card">
+            <img src="~/Pictures/AUS.png" alt="Team 1" class="card-img-top" />
+            <div class="card-body">
+                <h5 class="card-title">Australia</h5>
+                <p class="card-text">Description of Team 3.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-2">
+        <div class="card">
+            <img src="~/Pictures/ENG.png" alt="Team 2" class="card-img-top" />
+            <div class="card-body">
+                <h5 class="card-title">England</h5>
+                <p class="card-text">Description of Team 3.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-2">
+        <div class="card">
+            <img src="~/Pictures/IND.png" alt="Team 3" class="card-img-top" />
+            <div class="card-body">
+                <h5 class="card-title">India</h5>
+                <p class="card-text">Description of Team 3.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-2">
+        <div class="card">
+            <img src="~/Pictures/PAK.png" alt="Team 4" class="card-img-top" />
+            <div class="card-body">
+                <h5 class="card-title">Pakistan</h5>
+                <p class="card-text">Description of Team 4.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-2">
+        <div class="card">
+            <img src="~/Pictures/SA.png" alt="Team 5" class="card-img-top" />
+            <div class="card-body">
+                <h5 class="card-title">South Africa</h5>
+                <p class="card-text">Description of Team 5.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-2">
+        <div class="card">
+            <img src="~/Pictures/BAN.png" alt="Team 6" class="card-img-top" />
+            <div class="card-body">
+                <h5 class="card-title">Bangladesh</h5>
+                <p class="card-text">Description of Team 6.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-2">
+        <div class="card">
+            <img src="~/Pictures/WI.png" alt="Team 7" class="card-img-top" />
+            <div class="card-body">
+                <h5 class="card-title">West Indies</h5>
+                <p class="card-text">Description of Team 7.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-2">
+        <div class="card">
+            <img src="~/Pictures/NZ.png" alt="Team 8" class="card-img-top" />
+            <div class="card-body">
+                <h5 class="card-title">New Zealand</h5>
+                <p class="card-text">Description of Team 8.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-2">
+        <div class="card">
+            <img src="~/Pictures/ZIM.png" alt="Team 9" class="card-img-top" />
+            <div class="card-body">
+                <h5 class="card-title">Zimbabwe</h5>
+                <p class="card-text">Description of Team 9.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-2">
+        <div class="card">
+            <img src="~/Pictures/SL.png" alt="Team 10" class="card-img-top" />
+            <div class="card-body">
+                <h5 class="card-title">Srilanka</h5>
+                <p class="card-text">Description of Team 10.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-2">
+        <div class="card">
+            <img src="~/Pictures/IRE.png" alt="Team 11" class="card-img-top" />
+            <div class="card-body">
+                <h5 class="card-title">Ireleand</h5>
+                <p class="card-text">Description of Team 11.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-2">
+        <div class="card">
+            <img src="~/Pictures/AFG.png" alt="Team 12" class="card-img-top" />
+            <div class="card-body">
+                <h5 class="card-title">Afganistan</h5>
+                <p class="card-text">Description of Team 12.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="d-flex justify-content-center">
+            <img src="~/Pictures/Screenshot (95).png" alt="Image 1" class="img-fluid mx-2" style="max-width: 1000px;" />
+        </div>
+    </div>
+</div>
+<hr />
+<div class="m-5">
+    <p style="text-align: justify;">
+        Step into the enchanting realm of cricket with CricketVerse – a symphony of bat, ball, and glorious narratives. As you wander through the virtual crease of our MVC project, you're not just browsing cricket information; you're delving into a tapestry of legends, rivalries, and unparalleled moments.
+
+        In CricketVerse, numbers come alive, turning into eloquent verses that recount the battles on the pitch. From the thunderous applause of a century to the balletic elegance of a perfect yorker, each detail is a stanza in the grand ballad of the sport.
+
+        Experience a curated blend of historical milestones and modern marvels, all presented in a mesmerizing fusion of design and data. Our MVC project offers you a front-row seat to the world of cricket, where passion meets pixels, and statistics become sonnets.
+
+        Embark on a journey where player profiles are character sketches, and match statistics paint vivid canvases. Explore our interactive dashboard, where matches unfold in real-time and iconic performances resurface as immersive narratives.
+
+        Join us in celebrating the spirit of cricket through this unique digital ode. CricketVerse beckons – where every ball tells a story, and every fan is a poet.
+
+        Let the game begin!
+    </p>
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <div class="d-flex justify-content-center">
+            <img src="https://resources.pulse.icc-cricket.com/photo-resources/2022/07/01/d3c7dcd0-9b3d-441e-a66e-ec37baddbe5a/GettyImages-1348518130-1-.png?width=860&height=420" alt="Image 1" class="img-fluid mx-2" style="max-width: 1000px;" />
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <!-- Any additional scripts specific to this view can be placed here -->
+}

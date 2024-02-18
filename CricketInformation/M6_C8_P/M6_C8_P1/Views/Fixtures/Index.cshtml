@@ -1,0 +1,504 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .team-logo {
+            max-width: 30px;
+            max-height: 30px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .team-name {
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: bold;
+        }
+
+        .img-thumbnail {
+            border: none;
+            box-shadow: none;
+            padding: 0;
+            background-color: transparent;
+        }
+
+        h3 {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background-color: lightgray;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    @*<div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://resources.pulse.icc-cricket.com/photo-resources/2023/07/13/56ab440e-7978-49f8-b18d-a51ba8838fc7/cwc23-captains-v7.png?width=1920&height=1080" class="d-block w-100" style="max-height: 500px; object-fit: cover;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>*@
+
+    <h3 class="d-flex justify-content-center"><strong>ICC World Cup 2023 Fixtures</strong></h3>
+
+
+    <div class="container">
+
+        <table class="table table-striped">
+
+            <tr>
+                <th><strong>Match</strong></th>
+                <th><strong>Type</strong></th>
+                <th><strong>Team 1</strong></th>
+                <th><strong>Team 2</strong></th>
+                <th><strong>Date</strong></th>
+                <th><strong>Time</strong></th>
+                <th><strong>Stadium</strong></th>
+                <th><strong>City</strong></th>
+                <th><strong>Country</strong></th>
+                <th><strong>Capacity</strong></th>
+            </tr>
+
+            <tr>
+                <td>Match 1</td>
+                <td>ODI</td>
+                <td>India</td>
+                <td>England</td>
+                <td>2023-10-05</td>
+                <td>15:00</td>
+                <td>Lord's Cricket Ground</td>
+                <td>London</td>
+                <td>England</td>
+                <td>30,000</td>
+            </tr>
+            <!-- Match 2 -->
+            <tr>
+                <td>Match 2</td>
+                <td>ODI</td>
+                <td>Australia</td>
+                <td>Pakistan</td>
+                <td>2023-10-08</td>
+                <td>14:30</td>
+                <td>Sydney Cricket Ground</td>
+                <td>Sydney</td>
+                <td>Australia</td>
+                <td>40,000</td>
+            </tr>
+            <!-- Match 3 -->
+            <tr>
+                <td>Match 3</td>
+                <td>ODI</td>
+                <td>New Zealand</td>
+                <td>South Africa</td>
+                <td>2023-10-12</td>
+                <td>12:00</td>
+                <td>Eden Park</td>
+                <td>Auckland</td>
+                <td>New Zealand</td>
+                <td>35,000</td>
+            </tr>
+            <tr>
+                <td>Match 4</td>
+                <td>ODI</td>
+                <td>West Indies</td>
+                <td>Sri Lanka</td>
+                <td>2023-10-15</td>
+                <td>13:30</td>
+                <td>Kensington Oval</td>
+                <td>Bridgetown</td>
+                <td>Barbados</td>
+                <td>25,000</td>
+            </tr>
+            <tr>
+                <td>Match 5</td>
+                <td>ODI</td>
+                <td>Pakistan</td>
+                <td>New Zealand</td>
+                <td>2023-10-18</td>
+                <td>15:00</td>
+                <td>Rawalpindi Cricket Stadium</td>
+                <td>Rawalpindi</td>
+                <td>Pakistan</td>
+                <td>32,000</td>
+            </tr>
+            <tr>
+                <td>Match 6</td>
+                <td>ODI</td>
+                <td>England</td>
+                <td>New Zealand</td>
+                <td>2023-10-22</td>
+                <td>14:00</td>
+                <td>The Oval</td>
+                <td>London</td>
+                <td>England</td>
+                <td>25,000</td>
+            </tr>
+
+            <tr>
+                <td>Match 7</td>
+                <td>ODI</td>
+                <td>Australia</td>
+                <td>South Africa</td>
+                <td>2023-10-25</td>
+                <td>13:30</td>
+                <td>MCG</td>
+                <td>Melbourne</td>
+                <td>Australia</td>
+                <td>50,000</td>
+            </tr>
+
+            <tr>
+                <td>Match 8</td>
+                <td>ODI</td>
+                <td>India</td>
+                <td>Pakistan</td>
+                <td>2023-10-28</td>
+                <td>15:30</td>
+                <td>Eden Gardens</td>
+                <td>Kolkata</td>
+                <td>India</td>
+                <td>66,000</td>
+            </tr>
+
+            <tr>
+                <td>Match 9</td>
+                <td>ODI</td>
+                <td>West Indies</td>
+                <td>Afghanistan</td>
+                <td>2023-11-01</td>
+                <td>12:00</td>
+                <td>Queen's Park Oval</td>
+                <td>Port of Spain</td>
+                <td>Trinidad and Tobago</td>
+                <td>20,000</td>
+            </tr>
+
+            <tr>
+                <td>Match 10</td>
+                <td>ODI</td>
+                <td>Sri Lanka</td>
+                <td>New Zealand</td>
+                <td>2023-11-05</td>
+                <td>14:30</td>
+                <td>R.Premadasa Stadium</td>
+                <td>Colombo</td>
+                <td>Sri Lanka</td>
+                <td>28,000</td>
+            </tr>
+            <tr>
+                <td>Match 11</td>
+                <td>ODI</td>
+                <td>England</td>
+                <td>Pakistan</td>
+                <td>2023-11-09</td>
+                <td>13:00</td>
+                <td>Old Trafford</td>
+                <td>Manchester</td>
+                <td>England</td>
+                <td>26,000</td>
+            </tr>
+
+            <tr>
+                <td>Match 12</td>
+                <td>ODI</td>
+                <td>Australia</td>
+                <td>India</td>
+                <td>2023-11-13</td>
+                <td>14:30</td>
+                <td>Adelaide Oval</td>
+                <td>Adelaide</td>
+                <td>Australia</td>
+                <td>53,000</td>
+            </tr>
+
+            <tr>
+                <td>Match 13</td>
+                <td>ODI</td>
+                <td>New Zealand</td>
+                <td>Afghanistan</td>
+                <td>2023-11-18</td>
+                <td>11:00</td>
+                <td>Bay Oval</td>
+                <td>Tauranga</td>
+                <td>New Zealand</td>
+                <td>22,000</td>
+            </tr>
+
+            <tr>
+                <td>Match 14</td>
+                <td>ODI</td>
+                <td>South Africa</td>
+                <td>Sri Lanka</td>
+                <td>2023-11-22</td>
+                <td>13:30</td>
+                <td>Kingsmead Cricket Ground</td>
+                <td>Durban</td>
+                <td>South Africa</td>
+                <td>28,000</td>
+            </tr>
+
+            <tr>
+                <td>Match 15</td>
+                <td>ODI</td>
+                <td>West Indies</td>
+                <td>New Zealand</td>
+                <td>2023-11-26</td>
+                <td>12:00</td>
+                <td>Queen's Park Oval</td>
+                <td>Port of Spain</td>
+                <td>Trinidad and Tobago</td>
+                <td>20,000</td>
+            </tr>
+            <tr>
+                <td>Match 16</td>
+                <td>ODI</td>
+                <td>India</td>
+                <td>South Africa</td>
+                <td>2023-11-30</td>
+                <td>14:00</td>
+                <td>M. Chinnaswamy Stadium</td>
+                <td>Bengaluru</td>
+                <td>India</td>
+                <td>40,000</td>
+            </tr>
+
+            <!-- Match 17 -->
+            <tr>
+                <td>Match 17</td>
+                <td>ODI</td>
+                <td>Pakistan</td>
+                <td>Afghanistan</td>
+                <td>2023-12-04</td>
+                <td>15:30</td>
+                <td>Gaddafi Stadium</td>
+                <td>Lahore</td>
+                <td>Pakistan</td>
+                <td>27,000</td>
+            </tr>
+
+            <!-- Match 18 -->
+            <tr>
+                <td>Match 18</td>
+                <td>ODI</td>
+                <td>West Indies</td>
+                <td>South Africa</td>
+                <td>2023-12-09</td>
+                <td>12:00</td>
+                <td>Kensington Oval</td>
+                <td>Bridgetown</td>
+                <td>Barbados</td>
+                <td>25,000</td>
+            </tr>
+
+            <!-- Match 19 -->
+            <tr>
+                <td>Match 19</td>
+                <td>ODI</td>
+                <td>New Zealand</td>
+                <td>England</td>
+                <td>2023-12-13</td>
+                <td>13:30</td>
+                <td>Bay Oval</td>
+                <td>Tauranga</td>
+                <td>New Zealand</td>
+                <td>22,000</td>
+            </tr>
+
+            <!-- Match 20 -->
+            <tr>
+                <td>Match 20</td>
+                <td>ODI</td>
+                <td>Australia</td>
+                <td>West Indies</td>
+                <td>2023-12-17</td>
+                <td>14:00</td>
+                <td>Optus Stadium</td>
+                <td>Perth</td>
+                <td>Australia</td>
+                <td>60,000</td>
+            </tr>
+            <tr>
+                <td>Match 21</td>
+                <td>ODI</td>
+                <td>India</td>
+                <td>New Zealand</td>
+                <td>2023-12-21</td>
+                <td>13:00</td>
+                <td>Eden Gardens</td>
+                <td>Kolkata</td>
+                <td>India</td>
+                <td>66,000</td>
+            </tr>
+
+            <!-- Match 22 -->
+            <tr>
+                <td>Match 22</td>
+                <td>ODI</td>
+                <td>Pakistan</td>
+                <td>South Africa</td>
+                <td>2023-12-26</td>
+                <td>14:30</td>
+                <td>National Stadium</td>
+                <td>Karachi</td>
+                <td>Pakistan</td>
+                <td>34,000</td>
+            </tr>
+
+            <!-- Match 23 -->
+            <tr>
+                <td>Match 23</td>
+                <td>ODI</td>
+                <td>England</td>
+                <td>West Indies</td>
+                <td>2023-12-30</td>
+                <td>15:00</td>
+                <td>The Oval</td>
+                <td>London</td>
+                <td>England</td>
+                <td>25,500</td>
+            </tr>
+
+            <!-- Match 24 -->
+            <tr>
+                <td>Match 24</td>
+                <td>ODI</td>
+                <td>Australia</td>
+                <td>Sri Lanka</td>
+                <td>2024-01-05</td>
+                <td>12:30</td>
+                <td>Melbourne Cricket Ground</td>
+                <td>Melbourne</td>
+                <td>Australia</td>
+                <td>95,000</td>
+            </tr>
+
+            <!-- Match 25 -->
+            <tr>
+                <td>Match 25</td>
+                <td>ODI</td>
+                <td>New Zealand</td>
+                <td>India</td>
+                <td>2024-01-10</td>
+                <td>14:00</td>
+                <td>Wellington Regional Stadium</td>
+                <td>Wellington</td>
+                <td>New Zealand</td>
+                <td>39,000</td>
+            </tr>
+
+            <!-- Match 26 -->
+            <tr>
+                <td>Match 26</td>
+                <td>ODI</td>
+                <td>South Africa</td>
+                <td>Afghanistan</td>
+                <td>2024-01-15</td>
+                <td>13:30</td>
+                <td>SuperSport Park</td>
+                <td>Centurion</td>
+                <td>South Africa</td>
+                <td>22,000</td>
+            </tr>
+
+            <!-- Match 27 -->
+            <tr>
+                <td>Match 27</td>
+                <td>ODI</td>
+                <td>Pakistan</td>
+                <td>England</td>
+                <td>2024-01-20</td>
+                <td>15:00</td>
+                <td>National Stadium</td>
+                <td>Karachi</td>
+                <td>Pakistan</td>
+                <td>34,000</td>
+            </tr>
+
+            <!-- Match 28 -->
+            <tr>
+                <td>Match 28</td>
+                <td>ODI</td>
+                <td>West Indies</td>
+                <td>New Zealand</td>
+                <td>2024-01-26</td>
+                <td>14:30</td>
+                <td>Queen's Park Oval</td>
+                <td>Port of Spain</td>
+                <td>Trinidad and Tobago</td>
+                <td>20,000</td>
+            </tr>
+
+            <!-- Match 29 -->
+            <tr>
+                <td>Match 29</td>
+                <td>ODI</td>
+                <td>Australia</td>
+                <td>South Africa</td>
+                <td>2024-01-31</td>
+                <td>12:00</td>
+                <td>Sydney Cricket Ground</td>
+                <td>Sydney</td>
+                <td>Australia</td>
+                <td>40,000</td>
+            </tr>
+
+            <!-- Match 30 -->
+            <tr>
+                <td>Match 30</td>
+                <td>ODI</td>
+                <td>India</td>
+                <td>Pakistan</td>
+                <td>2024-02-05</td>
+                <td>15:30</td>
+                <td>Wankhede Stadium</td>
+                <td>Mumbai</td>
+                <td>India</td>
+                <td>33,000</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
+

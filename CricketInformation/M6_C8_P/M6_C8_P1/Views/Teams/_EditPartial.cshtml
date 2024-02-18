@@ -1,0 +1,156 @@
+﻿@model M6_C8_P1.ViewModels.TeamEditModel
+<input type="hidden" id="server-task" value="@ViewBag.Act" />
+
+<div class="col-12 d-flex justify-content-between">
+    <div class="col-8">
+        <div class="form-group row mb-1">
+            @Html.LabelFor(x => x.TeamName, new { @class = "col-form-label col-form-label-sm col-2" })
+            <div class="col-10">
+                @Html.TextBoxFor(x => x.TeamName, new { @class = "form-control form-control-sm" })
+                @Html.ValidationMessageFor(x => x.TeamName, "", new { @class = "text-danger", style = "font-size:x-small" })
+            </div>
+        </div>
+        <div class="form-group row mb-1">
+            @Html.LabelFor(x => x.Country, new { @class = "col-form-label col-form-label-sm col-2" })
+            <div class="col-10">
+                @Html.EnumDropDownListFor(x => x.Country, "Select one", new { @class = "form-select form-select-sm" })
+                @Html.ValidationMessageFor(x => x.Country, "", new { @class = "text-danger", style = "font-size:x-small" })
+            </div>
+        </div>
+        <div class="form-group row mb-1">
+            @Html.LabelFor(x => x.Coach, new { @class = "col-form-label col-form-label-sm col-2" })
+            <div class="col-10">
+                @Html.TextBoxFor(x => x.Coach, new { @class = "form-control form-control-sm" })
+                @Html.ValidationMessageFor(x => x.Coach, "", new { @class = "text-danger", style = "font-size:x-small" })
+            </div>
+        </div>
+        <div class="form-group row mb-1">
+            @Html.LabelFor(x => x.Captain, new { @class = "col-form-label col-form-label-sm col-2" })
+            <div class="col-10">
+                @Html.TextBoxFor(x => x.Captain, new { @class = "form-control form-control-sm" })
+                @Html.ValidationMessageFor(x => x.Captain, "", new { @class = "text-danger", style = "font-size:x-small" })
+            </div>
+        </div>
+        <div class="form-group row mb-1">
+            @Html.LabelFor(x => x.BoardPresident, new { @class = "col-form-label col-form-label-sm col-2" })
+            <div class="col-10">
+                @Html.TextBoxFor(x => x.BoardPresident, new { @class = "form-control form-control-sm" })
+                @Html.ValidationMessageFor(x => x.BoardPresident, "", new { @class = "text-danger", style = "font-size:x-small" })
+            </div>
+        </div>
+        <div class="form-group row mb-1">
+            @Html.LabelFor(x => x.Ranking, new { @class = "col-form-label col-form-label-sm col-2" })
+            <div class="col-10">
+                @Html.TextBoxFor(x => x.Ranking, new { @class = "form-control form-control-sm" })
+                @Html.ValidationMessageFor(x => x.Ranking, "", new { @class = "text-danger", style = "font-size:x-small" })
+            </div>
+        </div>
+        <div class="form-group row mb-1">
+            @Html.LabelFor(x => x.Established, new { @class = "col-form-label col-form-label-sm col-2" })
+            <div class="col-10">
+                @Html.TextBoxFor(x => x.Established, new { @class = "form-control form-control-sm" })
+                @Html.ValidationMessageFor(x => x.Established, "", new { @class = "text-danger", style = "font-size:x-small" })
+            </div>
+        </div>
+        <div class="form-group row mb-1">
+            @Html.LabelFor(x => x.HomeGround, new { @class = "col-form-label col-form-label-sm col-2" })
+            <div class="col-10">
+                @Html.TextBoxFor(x => x.HomeGround, new { @class = "form-control form-control-sm" })
+                @Html.ValidationMessageFor(x => x.HomeGround, "", new { @class = "text-danger", style = "font-size:x-small" })
+            </div>
+        </div>
+        <div class="form-group row mb-1">
+            @Html.LabelFor(x => x.TeamLogo, new { @class = "col-form-label col-form-label-sm col-2" })
+            <div class="col-10">
+                @Html.TextBoxFor(x => x.TeamLogo, new { @class = "form-control form-control-sm", type = "file" })
+                @Html.ValidationMessageFor(x => x.TeamLogo, "", new { @class = "text-danger", style = "font-size:x-small" })
+            </div>
+        </div>
+        <div class="form-group row mb-1">
+            <div class="form-check offset-2">
+                @Html.CheckBoxFor(x => x.IsWCWinner)
+                <label class="form-check-label" for="flexCheckDefault">
+                    World Cup Winner?
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <img src="~/Pictures/@ViewBag.CurrentPic" class="img-thumbnail" style="width:200px; margin:45px;" />
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12">
+        <table class="table table-bordered table-striped">
+            <thead class="table-light">
+                <tr>
+                    <th>Player Name</th>
+                    <th>Age</th>
+                    <th>Playing Role</th>
+                    <th>Matches</th>
+                    <th>Runs</th>
+                    <th>Hundred</th>
+                    <th>Fifty</th>
+                    <th>Wicket</th>
+                    <th>Salary</th>
+                    <th>
+                        <button type="submit" class="btn btn-secondary btn-sm" name="act" value="add" formnovalidate>Add</button>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (var i = 0; i < Model.Players.Count; i++)
+                {
+                    <tr>
+                        <td>
+                            @Html.TextBoxFor(x => Model.Players[i].PlayerName, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => Model.Players[i].PlayerName, "", new { @class = "text-danger" })
+
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(x => Model.Players[i].Age, new { @class = "form-control debut" })
+                            @Html.ValidationMessageFor(x => Model.Players[i].Age, "", new { @class = "text-danger" })
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(x => Model.Players[i].PlayingRole, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => Model.Players[i].PlayingRole, "", new { @class = "text-danger" })
+                        </td>
+
+                        <td>
+                            @Html.TextBoxFor(x => Model.Players[i].Matches, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => Model.Players[i].Matches, "", new { @class = "text-danger" })
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(x => Model.Players[i].Runs, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => Model.Players[i].Runs, "", new { @class = "text-danger" })
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(x => Model.Players[i].Hundred, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => Model.Players[i].Hundred, "", new { @class = "text-danger" })
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(x => Model.Players[i].Fifty, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => Model.Players[i].Fifty, "", new { @class = "text-danger" })
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(x => Model.Players[i].Wicket, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => Model.Players[i].Wicket, "", new { @class = "text-danger" })
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(x => Model.Players[i].Salary, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => Model.Players[i].Salary, "", new { @class = "text-danger" })
+                        </td>
+                        <th>
+                            <button type="submit" class="btn btn-secondary btn-sm" name="act" value="remove_@i" formnovalidate>Remove</button>
+                        </th>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+
